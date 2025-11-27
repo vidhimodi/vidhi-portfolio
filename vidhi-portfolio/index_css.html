@@ -1,0 +1,330 @@
+<!-- Vidhi Modi — Clean & Minimal Engineering Leader Portfolio -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vidhi Modi — Engineering Leader</title>
+
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #111827;
+      --muted: #6b7280;
+      --primary: #7e3ff2;
+      --border: #e5e7eb;
+      --radius: 10px;
+      --maxw: 950px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, system-ui, sans-serif;
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    .wrap {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 32px 20px 64px;
+    }
+
+    /* Navigation Bar */
+    .top-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      padding: 12px 40px;
+      z-index: 1000;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 22px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text);
+      font-size: 14px;
+      font-weight: 500;
+      transition: 0.25s;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+
+    .resume-btn {
+      background: none;
+      border: 2px solid var(--primary);
+      padding: 7px 16px;
+      border-radius: var(--radius);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--primary);
+      transition: 0.25s;
+    }
+
+    .resume-btn:hover {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 6px;
+    }
+
+    p.lead {
+      color: var(--muted);
+      max-width: 700px;
+      margin: 0.5rem auto 1rem;
+    }
+
+    a.button {
+      display: inline-block;
+      background: var(--primary);
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 14px;
+      border-radius: var(--radius);
+      font-size: 14px;
+      margin: 6px;
+    }
+
+    section {
+      margin-bottom: 36px;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-bottom: 14px;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 6px;
+    }
+
+    .card-list article {
+      margin-bottom: 20px;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .role {
+      font-weight: 600;
+    }
+
+    .meta {
+      font-size: 14px;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+
+    ul { padding-left: 18px; margin: 6px 0; }
+    li { margin: 4px 0; }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .chip {
+      border: 1px solid var(--border);
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 13px;
+      color: var(--muted);
+      background: #f9fafb;
+    }
+
+    footer {
+      font-size: 13px;
+      text-align: center;
+      color: var(--muted);
+      margin-top: 40px;
+    }
+
+    /* Smooth fade-in animation */
+    .fade-in { opacity: 0; transform: translateY(10px); animation: fadeInUp 0.6s ease forwards; }
+    @keyframes fadeInUp { to { opacity: 1; transform: translateY(0); } }
+
+    /* Hover card elevation */
+    .card-hover:hover { background: #fafaff; transform: translateY(-2px); transition: 0.25s; }
+
+    @media (max-width: 700px) {
+      .top-nav {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 20px;
+      }
+    }
+  </style>
+
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="top-nav">
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#impact">Impact</a>
+      <a href="#case-studies">Work</a>
+      <a href="#skills">Skills</a>
+    </div>
+
+    <a href="assets/Vidhi_Modi_Resume_25.pdf" download class="resume-btn">
+      Download Résumé
+    </a>
+  </nav>
+
+  <div style="height:100px;"></div>
+
+  <div class="wrap">
+
+    <header id="about">
+      <h1>Vidhi Modi</h1>
+      <p class="lead">Engineering Leader | Backend & Cloud Systems | Product-Driven Execution</p>
+      <a class="button" href="#impact">Impact Portfolio</a>
+    </header>
+
+    <section id="impact" class="fade-in">
+      <h2>Impact Highlights</h2>
+
+      <div style="display:flex;flex-wrap:wrap;gap:16px;margin-bottom:18px;">
+        <div style="flex:1;min-width:120px;text-align:center;border:1px solid var(--border);border-radius:var(--radius);padding:14px;">
+          <div style="font-size:22px;font-weight:700;color:var(--primary);">3×</div>
+          <div class="meta">Deployment Speed</div>
+        </div>
+        <div style="flex:1;min-width:120px;text-align:center;border:1px solid var(--border);border-radius:var(--radius);padding:14px;">
+          <div style="font-size:22px;font-weight:700;color:var(--primary);">35%</div>
+          <div class="meta">Conversion Uplift</div>
+        </div>
+        <div style="flex:1;min-width:120px;text-align:center;border:1px solid var(--border);border-radius:var(--radius);padding:14px;">
+          <div style="font-size:22px;font-weight:700;color:var(--primary);">100K+</div>
+          <div class="meta">Daily Automation Jobs</div>
+        </div>
+        <div style="flex:1;min-width:120px;text-align:center;border:1px solid var(--border);border-radius:var(--radius);padding:14px;">
+          <div style="font-size:22px;font-weight:700;color:var(--primary);">99.9%</div>
+          <div class="meta">Platform Uptime</div>
+        </div>
+      </div>
+
+      <ul>
+        <li>Led 2 engineering teams (15–16 engineers) in delivering scalable hosting systems</li>
+        <li>Boosted sprint velocity by ~30% & reduced delivery slippage by 40%</li>
+        <li>Accelerated GTM by 2× through modular onboarding services</li>
+        <li>Improved reliability to >99.9% uptime & reduced costs by ~15%</li>
+        <li>Impacted 6,000+ individuals through Art of Living programs</li>
+      </ul>
+    </section>
+
+    <section id="case-studies">
+      <h2>Case Studies</h2>
+      <div class="card-list">
+        <article>
+          <div class="role">Faster Hosting Plan Launch</div>
+          <div class="meta">Technical Manager — Newfold Digital</div>
+          <ul>
+            <li>Cut integration time from ~6 weeks to 3 weeks</li>
+            <li>Drove +35% uplift in new-user conversion</li>
+          </ul>
+        </article>
+
+        <article>
+          <div class="role">Deployment Throughput +3×</div>
+          <div class="meta">Platform Engineering</div>
+          <ul>
+            <li>Reduced release cycles to under 30 minutes</li>
+            <li>Enabled rapid experimentation & iteration</li>
+          </ul>
+        </article>
+
+        <article>
+          <div class="role">Microservices & Reliability Upgrade</div>
+          <div class="meta">Newfold Digital</div>
+          <ul>
+            <li>20% compute efficiency improvement</li>
+            <li>Achieved >99.9% uptime for core services</li>
+          </ul>
+        </article>
+
+        <article>
+          <div class="role">Automation @ 100K+ Jobs/Day</div>
+          <div class="meta">Newfold Digital</div>
+          <ul>
+            <li>Scaled cron systems powering hosting operations</li>
+            <li>50+ integrations monthly across products</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Leadership & Community</h2>
+      <ul>
+        <li>Built onboarding programs reducing ramp-up time by 50%</li>
+        <li>Mentored engineers & improved ownership maturity</li>
+        <li>Led 30–40 volunteers delivering wellness programs</li>
+      </ul>
+    </section>
+
+    <section id="skills" class="fade-in">
+      <h2>Skills</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px;margin-top:18px;">
+        <div style="border:1px solid var(--border);padding:12px;border-radius:var(--radius);text-align:center;background:#fafafb;">
+          <strong>Backend</strong>
+          <div class="meta" style="margin-top:4px;">Java, Spring Boot</div>
+        </div>
+        <div style="border:1px solid var(--border);padding:12px;border-radius:var(--radius);text-align:center;background:#fafafb;">
+          <strong>Architecture</strong>
+          <div class="meta" style="margin-top:4px;">Microservices, Distributed Systems</div>
+        </div>
+        <div style="border:1px solid var(--border);padding:12px;border-radius:var(--radius);text-align:center;background:#fafafb;">
+          <strong>Databases</strong>
+          <div class="meta" style="margin-top:4px;">PostgreSQL, Redis (basics)</div>
+        </div>
+        <div style="border:1px solid var(--border);padding:12px;border-radius:var(--radius);text-align:center;background:#fafafb;">
+          <strong>Cloud & DevOps</strong>
+          <div class="meta" style="margin-top:4px;">CI/CD, AWS basics</div>
+        </div>
+        <div style="border:1px solid var(--border);padding:12px;border-radius:var(--radius);text-align:center;background:#fafafb;">
+          <strong>Leadership</strong>
+          <div class="meta" style="margin-top:4px;">Mentorship, Roadmaps</div>
+        </div>
+        <div style="border:1px solid var(--border);padding:12px;border-radius:var(--radius);text-align:center;background:#fafafb;">
+          <strong>Product Mindset</strong>
+          <div class="meta" style="margin-top:4px;">KPIs, Conversion, GTM</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: vidhimodii@gmail.com</p>
+      <p>Phone: +91-8387020000</p>
+      <p>LinkedIn: linkedin.com/in/vidhimodii</p>
+    </section>
+
+    <footer>© Vidhi Modi — Engineering Leader</footer>
+
+  </div>
+</body>
+</html>
