@@ -721,6 +721,11 @@ footer {
     padding-inline: 14px;
   }
 
+  .other-headings::after {
+    width: 40px;
+    bottom: -2px;
+  }
+
   .nav-links {
     display: none; /* keep top nav minimal on small screens; can add burger later */
   }
@@ -729,27 +734,60 @@ footer {
   .metrics {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
- .hero {
-  display: grid;
-  grid-template-columns: 1.6fr 1.2fr;  /* adjust proportion of space for image */
-  gap: 40px;
-  align-items: center;
-}
 
+  .hero {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 18px;
+  }
 
+  .hero-photo {
+    width: 120px !important;
+    height: 120px !important;
+    /*max-width: 120px !important;
+    max-height: 120px !important;
+    object-fit: cover !important;
+    border-radius: 20px !important;*/
+  }
 
-.hero-photo {
-  width: 120px !important;
-  height: 120px !important;
-  max-width: 120px !important;
-  max-height: 120px !important;
-  object-fit: cover !important;
-  border-radius: 20px !important;
-}
+  .hero-photo-wrapper {
+    justify-content: center;
+    padding-right: 0;
+    margin-top: 6px;
+  }
 
-.hero-photo:hover {
-  transform: translateY(-6px);
-}
+  .hero-photo:hover {
+    transform: translateY(-6px);
+  }
+  .hero-eyebrow {
+    font-size: 42px;
+  }
 
+  .hero-title {
+    font-size: 20px;
+  }
+
+  /* Make metric pills stack properly */
+  .hero-metrics {
+    justify-content: center;
+  }
+
+  /* Fix grids so they don't overflow */
+  .about-grid,
+  .work-grid,
+  .skills-grid,
+  .leadership-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .timeline {
+    margin-left: 0;
+    border-left: none;
+  }
+
+  .timeline-marker {
+    display: none;
+  }
 
 }
