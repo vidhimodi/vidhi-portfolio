@@ -721,6 +721,10 @@ footer {
     padding-inline: 14px;
   }
 
+  .other-headings {
+    font-size: 20px;
+  }
+
   .other-headings::after {
     width: 40px;
     bottom: -2px;
@@ -730,21 +734,22 @@ footer {
     display: none; /* keep top nav minimal on small screens; can add burger later */
   }
 
-
   .metrics {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .hero {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     text-align: center;
-    gap: 18px;
+    gap: 14px;
+    align-items: center;
   }
 
   .hero-photo {
-    width: 120px !important;
-    height: 120px !important;
+    width: 150px !important;
+    height: 150px !important;
+    border-radius: 16px !important;
     /*max-width: 120px !important;
     max-height: 120px !important;
     object-fit: cover !important;
@@ -752,25 +757,67 @@ footer {
   }
 
   .hero-photo-wrapper {
+    display: flex;
     justify-content: center;
-    padding-right: 0;
+    padding: 0;
+    width: 100%;
+    margin-bottom: 12px;
     margin-top: 6px;
   }
 
   .hero-photo:hover {
     transform: translateY(-6px);
   }
+
   .hero-eyebrow {
-    font-size: 42px;
+    font-size: 40px;
+    line-height: 1;
+    margin-top: 8px;
   }
 
   .hero-title {
-    font-size: 20px;
+    font-size: 22px;
+    line-height: 1.25;
+    margin-bottom: 10px;
+  }
+
+  .hero-subtitle {
+    font-size: 15px;
+    margin-bottom: 18px;
+  }
+
+  .hero-actions {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+    padding: 12px 14px;
+    font-size: 15px;
   }
 
   /* Make metric pills stack properly */
   .hero-metrics {
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 100%;
+    justify-items: center;
+  }
+
+
+  .metric-pill {
+    width: 100%;
+    text-align: center;
+    padding: 10px 12px;
+  }
+
+  .section {
+    margin-top: 48px;
   }
 
   /* Fix grids so they don't overflow */
@@ -779,15 +826,22 @@ footer {
   .skills-grid,
   .leadership-grid {
     grid-template-columns: 1fr !important;
+    gap: 12px;
   }
 
   .timeline {
-    margin-left: 0;
     border-left: none;
+    margin-left: 0;
+    padding-left: 0;
   }
 
   .timeline-marker {
     display: none;
+  }
+
+  .timeline-content {
+    border-left: 3px solid var(--accent);
+    padding-left: 12px;
   }
 
 }
